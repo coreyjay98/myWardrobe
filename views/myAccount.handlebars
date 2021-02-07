@@ -10,23 +10,22 @@
       <li id="add-new-tab" class="nav-item addNewButton" role="presentation">
         <a class="nav-link" href="addNew"><span>Add New Item</span></a>
       </li>
-      <li id="wardrobe-stats-tab" class="nav-item" role="presentation">
-        <a class="nav-link active" href="/"><span>My Account</span></a>
+      <li id="my-account-tab" class="nav-item" role="presentation">
+        <a class="nav-link" href="/"><span>My Account</span></a>
       </li>
     </ul>
-    <div id="second-folder" class="folder"> </div>
-    <div id="first-folder" class="folder"> </div>
   </nav>
+
   <section id="content-view" class="row">
     <div id="content-folder" class="tab-content ">
       <div class="row">
 
-        <div class="col-4 welcomeContent">
+        <div class="col-xl-4 welcomeContent">
           <!-- Tab content to render here - My Wardrobe, saved outfits, stats, add item -->
           {{> login }}
         </div>
 
-        <div class="col-8 ">
+        <div class="col-xl-8 ">
           <div class="instructions-container">
             <h4 id="my-account-instructions">My Account</h4>
             <p>
