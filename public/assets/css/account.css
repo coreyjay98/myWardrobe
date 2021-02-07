@@ -1,0 +1,27 @@
+/* user account page styling  */
+
+#user-name-input, 
+#user-name-button, 
+#user-create-name-button {
+  width: 200px;
+  display: block;
+  margin: 5px 0;
+}
+
+.instructions-container {
+  border: 2px solid #BDD2C3;
+  background-color: white;
+  border-radius: 5px;
+  overflow-y: scroll;
+  max-height: 65vh;
+  padding: 12px;
+  margin: 15px 0;
+}
+
+.navbar-toggler,
+.navbar-toggler.collapsed {
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+  margin: 0 0 12px 0;
+}

@@ -122,7 +122,7 @@ View the live application on [Heroku](https://my-wardrobe-slw.herokuapp.com/).
 
     Advice: weight should be Heavy, Light, Medium, Sheer, Thick, but it is not restricted. This property currently has no feature attached. 
 
-    Select from the drop down menu, tops bottoms or overalls. Overalls are dresses and dungeree, over categories could be added through the development tools manually. Such as Jumpsuit and onsie could be added to overalls. They will also need to be added to the dropdown menus manually. 
+    Select from the drop down menu, tops bottoms or overalls. Overalls are dresses and dungeree, other categories could be added through the development tools manually. Such as Jumpsuit and onsie could be added to overalls. They will also need to be added to the dropdown menus manually. 
 
     These 3 options will sort the item in the carousel and further display a category list for the type of garment. Please pick only one, though there is no restriction.
 
@@ -168,6 +168,10 @@ Moving forward with this application, these are the key areas we'd like to devel
 (03.02.2021) 
 - I have restructured the file system and routing to better match the MVC design pattern.
 - I have added Error hadeling on the Express Router functions.  
+
+(07.02.2021)
+- Instructions added to Login Page.
+- Add Item structure improved and code slimmed. 
 
 ## Learning
 

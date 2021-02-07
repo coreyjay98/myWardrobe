@@ -38,6 +38,17 @@ router.post('/newOutfit', async function (req, res, next) {
   }
 });
 
+/*
+router.post('/newOutfit', async function (req, res, next) {
+  const user = await userModel.selectUserByName(req.body.userID);
+  outfitModel.addNewOutfit(req.body.name, user[0].id).then(()=> {
+    res.redirect(307, '/')
+  }).catch(error => {
+    res.status(401).json(error)
+  });
+});
+*/
+
 // add items to outfit
 router.post('/addItems', async function (req, res, next) {
   console.log('req.body =', req.body);

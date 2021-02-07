@@ -45,6 +45,7 @@ function colourSubmit() {
   $('.colourSubmission').removeClass('emptyForm');
   return colour;
 }
+
 // Pattern form submission check to see if valid input
 function patternSubmit() {
   const pattern = $('.patternSubmission').val();
@@ -55,6 +56,7 @@ function patternSubmit() {
   $('.patternSubmission').removeClass('emptyForm');
   return pattern;
 }
+
 // Weight form submission check to see if valid input
 function weightSubmit() {
   const weight = $('.weightSubmission').val();
@@ -97,6 +99,7 @@ function imageSubmit() {
   if (theFile.length > 1 || theFile.length === 0) {
     return badUpload();
   }
+  
   /* Form to send the file in to Cloudinary */
   const formData = new FormData();
   Object.keys(theFile).forEach((key) => {
