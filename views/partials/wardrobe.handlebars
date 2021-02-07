@@ -1,69 +1,71 @@
 <div class="tab-pane fade show active" id="my-wardrobe-content" role="tabpanel" aria-labelledby="my-wardrobe-tab">
-    <h2>My Wardrobe</h2>
-    <div id='my-wardrobe-message' class="overflow-hidden messages-to-user">
-        <p>Message to the User</p>
-    </div>
-    <div id="outfit-view" class="outfit-box">
-        <div class="row">
-            <div class="col-3 column">
-            <button id="create-outfit">Create Outfit</button>
-            <br/>
-            <button id="clear-outfit">Clear Outfit</button>
-            <br/>
-            <lable for="outfit-name" class="display-none">Outfit Name</lable>
-            <input type="text" id="outfit-name" name="outfit-name" placeholder="Outfit Name" />
-            <br/>
-            <div class="mb-3">
-                <label for="item-filter" class="form-label display-none">Category Filter</label>
-                <select id="item-filter" class="form-select" aria-label="Default select example">
-                    <option selected >Filter</option>
-                    <option >View All</option>
-                    <option value="blouse">Blouse</option>
-                    <option value="croptop">Croptop</option>
-                    <option value="dress">Dress</option>
-                    <option value="dungaree">Dungaree</option>
-                    <option value="jeans">Jeans</option>
-                    <option value="jumper">Jumper</option>
-                    <option value="polo">Polo</option>
-                    <option value="poloneck">Poloneck </option>
-                    <option value="shirt">Shirt</option>
-                    <option value="shorts">Shorts</option>
-                    <option value="skirt">Skirt</option>
-                    <option value="tights">Tights</option>
-                    <option value="trousers">Trousers</option>
-                    <option value="tshirt">Tshirts</option>
-                    <option value="tunictop">TunicTop</option>
-                    <option value="vest">Vest</option>
-                    <option value="wooltop">Wooltop</option>
-                </select>
-            </div>
+  <h2>My Wardrobe</h2>
+  <div id='my-wardrobe-message' class="overflow-hidden messages-to-user">
+    <p>Message to the User</p>
+  </div>
+  <div id="outfit-view" class="outfit-box">
+    <div class="row">
+      <div class="col-xl-3 column">
+        <button id="create-outfit">Create Outfit</button>
+        <br />
+        <button id="clear-outfit">Clear Outfit</button>
+        <br />
+        <lable for="outfit-name" class="display-none">Outfit Name</lable>
+        <input type="text" id="outfit-name" name="outfit-name" placeholder="Outfit Name" />
+        <br />
+
+        <div class="mb-3">
+          <label for="item-filter" class="form-label display-none">Category Filter</label>
+          <select id="item-filter" class="form-select" aria-label="Default select example">
+            <option selected>Filter</option>
+            <option>View All</option>
+            <option value="blouse">Blouse</option>
+            <option value="croptop">Croptop</option>
+            <option value="dress">Dress</option>
+            <option value="dungaree">Dungaree</option>
+            <option value="jeans">Jeans</option>
+            <option value="jumper">Jumper</option>
+            <option value="polo">Polo</option>
+            <option value="poloneck">Poloneck </option>
+            <option value="shirt">Shirt</option>
+            <option value="shorts">Shorts</option>
+            <option value="skirt">Skirt</option>
+            <option value="tights">Tights</option>
+            <option value="trousers">Trousers</option>
+            <option value="tshirt">Tshirts</option>
+            <option value="tunictop">TunicTop</option>
+            <option value="vest">Vest</option>
+            <option value="wooltop">Wooltop</option>
+          </select>
         </div>
-        <div class="col-9 column">
-            <div id="outfit-creator"></div>
-        </div>
+
+      </div>
+      <div class="col-xl-9 column">
+        <div id="outfit-creator"></div>
+      </div>
     </div>
 
-        </div>
-        
-    <h4>Tops</h4>
-    <div class="topsCarousel carousel">
-        {{#each tops}}
-        <img src="{{imageURL}}" alt="{{name}}" data-id="{{id}}" />
-        {{/each}}
-    </div>
+  </div>
 
-    <h4>Bottoms</h4>
-    <div class="bottomsCarousel carousel" dir="rtl">
-        {{#each bottoms}}
-        <img src="{{imageURL}}" alt="{{name}}" data-id="{{id}}" />
-        {{/each}}
-    </div>
+  <h4>Tops</h4>
+  <div class="topsCarousel carousel">
+    {{#each tops}}
+    <img src="{{imageURL}}" alt="{{name}}" data-id="{{id}}" />
+    {{/each}}
+  </div>
 
-    <h4>Overalls</h4>
-    <div class="overallsCarousel carousel">
-        {{#each overalls}}
-        <img src="{{imageURL}}" alt="{{name}}" data-id="{{id}}" />
-        {{/each}}
-    </div>
+  <h4>Bottoms</h4>
+  <div class="bottomsCarousel carousel" dir="rtl">
+    {{#each bottoms}}
+    <img src="{{imageURL}}" alt="{{name}}" data-id="{{id}}" />
+    {{/each}}
+  </div>
+
+  <h4>Overalls</h4>
+  <div class="overallsCarousel carousel">
+    {{#each overalls}}
+    <img src="{{imageURL}}" alt="{{name}}" data-id="{{id}}" />
+    {{/each}}
+  </div>
 
 </div>

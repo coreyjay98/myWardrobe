@@ -172,6 +172,7 @@ Moving forward with this application, these are the key areas we'd like to devel
 (07.02.2021)
 - Instructions added to Login Page.
 - Add Item structure improved and code slimmed. 
+- Mobile view improved.
 
 ## Learning
 

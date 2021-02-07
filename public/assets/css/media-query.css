@@ -2,20 +2,152 @@
 
 @media screen and (max-width: 550px) {
     
-  #first-folder {
-    width: 82%;
-    transform: translateY(-2px);
-  }
-
-  #second-folder {
-    width: 78%;
-    transform: translateY(-1px);
+  /* nav styling */
+  nav > ul {
+    background-image: url(../img/extras/coat-hanger.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    margin: 12px 12px 0 12px;
+    justify-content: center;
   }
   
-  #third-folder {
-    width: 76%;
-    transform: translateY(0px);
+  nav > ul > li.nav-item {
+    background-image: unset;
+    height: 30px;
+    width: 200px;
+    margin: 0;
+    background-color: #f0efeb;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
   }
+
+
+  nav > ul > li.nav-item > a.nav-link {
+    border-bottom: unset;
+  }
+
+  nav > ul > li.nav-item:hover {
+    background-image: unset;
+    background-color: #8ab6a2;
+  }
+
+  #my-wardrobe-tab {
+    margin-top: 100px;
+    /* border-top: 3px solid black; */
+  }
+
+  #my-account-tab {
+    border-bottom: 3px solid black;
+  }
+
+  /* content styling  */
+  h1 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  h4, label, li.calendar-style, a.calendar-style {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.7rem;
+  }
+  
+  section#content-view {
+    padding: 0 10px;
+  }
+  div#content-folder {
+    padding: 10px;
+  }
+
+  .col-xl-4,
+  .col-xl-8 {
+    padding: 0 10px;
+  }
+
+  div.col {
+    padding: 6px;
+  }
+
+  .messages-to-user {
+    padding: 8px;
+  }
+  
+  .messages-to-user>p {
+    font-size: 0.7rem;
+  }
+
+  /* my account page */
+
+  .instructions-container {
+    padding: 6px;
+    
+  }
+
+  /* add new item page */
+
+  .wardrobeSubmit {
+    position: unset;
+  }
+
+  /* saved outfits page and create new outfit page */
+
+  div#saved-outfits-message{
+    order: 2;
+  }
+
+  div#outfits-container {
+    order: 1;
+    padding: 0;
+  }
+
+  .outfit-box {
+    padding: 6px;
+  }
+
+  #delete-outfit, 
+  #add-to-calendar, 
+  #remove-from-calendar, 
+  #create-outfit, 
+  #clear-outfit,
+  #outfit-name,
+  #item-filter {
+    width: 100%;
+    height: 40px;
+    font-size: 0.9rem;
+  }
+
+  button.select-outfit {
+    position: absolute;
+    top: 40px;
+    display: block;
+  }
+
+  .outfit-box>h3 {
+    margin-bottom: 70px;
+    height: 35px;
+  }
+
+  #outfit-creator {
+    height: unset;
+    padding: 10px;
+  }
+
+  #outfit-view {
+    height: unset;
+  }
+
+  #outfit-creator>img {
+    max-width:30%;
+  }
+
+  .carousel > div > div > img {
+    max-height: auto;
+    max-width: 120px;
+  }
+  
 }
 
 /* Small devices (landscape phones, 576px and up) */
