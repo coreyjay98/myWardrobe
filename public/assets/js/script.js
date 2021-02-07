@@ -6,25 +6,7 @@ $(document).ready(function () {
   const fileChosen = $('#file-chosen');
   const itemFilter = $('#item-filter');
 
-  // ------- unnamed function -----------------------------------
-  // Displaying categories based on type selection in Add Item form.
-  // ------------------------------------------------------------
-  $('#typeSelection').change(function () {
-    const selection = document.getElementById('typeSelection').value;
-    if (selection === 'Top') {
-      $('#topTypeSelected').css('display', 'block');
-      $('#bottomTypeSelected').css('display', 'none');
-      $('#overallTypeSelected').css('display', 'none');
-    } else if (selection === 'Bottom') {
-      $('#topTypeSelected').css('display', 'none');
-      $('#bottomTypeSelected').css('display', 'block');
-      $('#overallTypeSelected').css('display', 'none');
-    } else if (selection === 'Overall') {
-      $('#topTypeSelected').css('display', 'none');
-      $('#bottomTypeSelected').css('display', 'none');
-      $('#overallTypeSelected').css('display', 'block');
-    }
-  });
+  
 
   // ------- getCatId  -----------------------------------
   // Gets the category Id from the database referenced by the outfit name
@@ -77,6 +59,7 @@ $(document).ready(function () {
 
   // event listeners
   itemFilter.change(filterCarousel);
+  
   $(document).on('change', '#myFile',function(){
     const text = this.files[0].name;
     fileChosen.text(text)

@@ -98,7 +98,6 @@ nav.row {
 nav > ul {
   margin-top: 20px;
   margin-left: 20px;
-  /* justify-content: center; */
   width: 100%;
 }
 
@@ -149,18 +148,16 @@ div.folder {
   border-bottom: unset;
   background-color: #f0efeb;
   z-index: 0;
-  transform: translateY(-3px);
+  
 }
 
 #second-folder {
   bottom: 110px;
-  transform: translateY(-2px);
   width: 85%;
 }
 
 #third-folder {
   bottom: 220px;
-  transform: translateY(0px);
   width: 80%;
 }
 
@@ -204,7 +201,7 @@ input, select {
   border: 2px solid #BDD2C3;
 }
 
-button, lable.file-upload {
+button, .file-upload {
   width: 150px; 
   height: 55px;
   margin: 5px auto; 
@@ -214,7 +211,7 @@ button, lable.file-upload {
   border: 2px solid #BDD2C3; 
 }
 
-lable.file-upload {
+.file-upload {
   cursor: pointer;
   text-align: center;
   padding: 15px 0;
@@ -236,27 +233,6 @@ button:focus, button:active {
   border: 2px solid #8AB7A2; 
 }
 
-#typeSelection {
-  height: 40px;
-  border: 1px solid #ced4da;
-  color: #495057;
-}
-
-#topTypeSelected {
-  display: none;
-}
-
-#bottomTypeSelected {
-  display: none;
-}
-
-#overallTypeSelected {
-  display: none;
-}
-
-#user-name-input, #user-name-button {
-  width: 200px;
-}
 
 
 

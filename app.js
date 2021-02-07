@@ -41,6 +41,11 @@ app.use('/item', require('./routes/itemRoute'));
 // use res.render for handlebars
 app.use('/', require('./routes/htmlRoutes'));
 
+/* - handles all failed get requests to urls unspecified
+app.all('/*', (req, res, next) => {
+  res.status(404).send({message: 'Route does not exist'})
+});
+*/
 const PORT = process.env.PORT || 5000;
 db.authenticate()
   .then(async () => {
