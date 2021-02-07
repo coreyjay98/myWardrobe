@@ -15,6 +15,7 @@ The simple way to stay organised, build you wardrobe by snapping pictures of you
 - [Installation](#installation)
 - [Functionality](#functionality)
 - [Further Development](#further-development)
+- [Updates](#updates)
 - [Learning](#learning)
 - [License](#license)
 
@@ -47,7 +48,7 @@ This app aims to solve these issues.
 
 ## Link to deployed application
 
-View the live application on [Heroku](https://mywardrobeproject.herokuapp.com/).
+View the live application on [Heroku](https://my-wardrobe-slw.herokuapp.com/).
 
 ---
 
@@ -121,7 +122,7 @@ View the live application on [Heroku](https://mywardrobeproject.herokuapp.com/).
 
     Advice: weight should be Heavy, Light, Medium, Sheer, Thick, but it is not restricted. This property currently has no feature attached. 
 
-    Select from the drop down menu, tops bottoms or overalls. Overalls are dresses and dungeree, over categories could be added through the development tools manually. Such as Jumpsuit and onsie could be added to overalls. They will also need to be added to the dropdown menus manually. 
+    Select from the drop down menu, tops bottoms or overalls. Overalls are dresses and dungeree, other categories could be added through the development tools manually. Such as Jumpsuit and onsie could be added to overalls. They will also need to be added to the dropdown menus manually. 
 
     These 3 options will sort the item in the carousel and further display a category list for the type of garment. Please pick only one, though there is no restriction.
 
@@ -155,7 +156,23 @@ Moving forward with this application, these are the key areas we'd like to devel
 
   A further feature could be to restrict planning to 3 months ahead and see Outfits from a single month behind. 
 
+- **Upload image background remover**
+    In Our screenshots We have uploaded graphics of the clothes in our wardrobe. The user can choose what images they upload. 
+
+    Future defvelopement would see the use of a background remover api so the user can have a cleaner display of their own clothes. 
+
 ---
+
+## Updates 
+
+(03.02.2021) 
+- I have restructured the file system and routing to better match the MVC design pattern.
+- I have added Error hadeling on the Express Router functions.  
+
+(07.02.2021)
+- Instructions added to Login Page.
+- Add Item structure improved and code slimmed. 
+- Mobile view improved.
 
 ## Learning
 

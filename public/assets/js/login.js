@@ -1,5 +1,7 @@
-/* Functions that return Welcome messages depending on if the user is new or existing */
-
+/*
+Functions that return Welcome messages
+depending on if the user is new or existing
+*/
 function welcomeBack(name) {
   return `
     <div class='welcomeBack'>
@@ -19,7 +21,10 @@ function welcomeFirstTime(name) {
    `;
 }
 
-/*  IIFE that checks for a user in local storage and decides what to return to the UI */
+/*
+IIFE that checks for a user in local storage
+and decides what to return to the UI
+*/
 (async function () {
   const storageObject = {};
   const user = localStorage.getItem('user');
@@ -28,20 +33,23 @@ function welcomeFirstTime(name) {
     url: '/',
     data: storageObject,
   }).then((res) => {
+    console.log("res",res); 
     if (res.length > 0) {
       const userID = res[0].id;
       localStorage.setItem('userID', userID);
       $('.welcomeDiv').addClass('displayNone');
       $('.welcomeContent').append(welcomeBack(res[0].name));
     } else if (res.length === 0) {
-      // console.log('noo');
+      // console.log('nothing returned');
     }
   });
 })();
 
-/* This function runs when the user presses the sign in button, sets the local storage
- and makes a call to the DB to check for the users name  */
-
+/*
+This function runs when the user presses the sign in button,
+sets the local storage
+and makes a call to the DB to check for the users name
+*/
 $('.signIn').submit((e) => {
   const userData = {};
   e.preventDefault();
@@ -60,10 +68,10 @@ $('.signIn').submit((e) => {
       localStorage.setItem('userID', res.id);
       $('.welcomeDiv').addClass('displayNone');
       $('.welcomeContent').append(welcomeBack(user));
-      window.location = window.location;
+      window.location.reload(true);
     } else {
       $.post({
-        url: '/create/user',
+        url: '/user/addNew',
         data: userData,
       }).then((res) => {
         localStorage.setItem('user', user);
@@ -80,5 +88,5 @@ $(document).on('click', '.signOut', (e) => {
   e.preventDefault();
   localStorage.setItem('user', '');
   localStorage.setItem('userID', '');
-  window.location = window.location;
+  window.location.reload(true);
 });

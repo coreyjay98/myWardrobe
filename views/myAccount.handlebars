@@ -1,55 +1,158 @@
 <main>
-    <nav class="row">
-        <ul class="nav nav-tabs" role="tablist">
-            <li id="my-wardrobe-tab" class="nav-item wardrobeButton" role="presentation">
-                <a class="nav-link" href=""><span>My Wardrobe</span></a>
-            </li>
-            <li id="saved-outfits-tab" class="nav-item savedOutfitsButton" role="presentation">
-                <a class="nav-link" href=""><span>Saved Outfits</span></a>
-            </li>
-            <li id="add-new-tab" class="nav-item addNewButton" role="presentation">
-                <a class="nav-link" href="addNew"><span>Add New Item</span></a>
-            </li>
-            <li id="wardrobe-stats-tab" class="nav-item" role="presentation">
-                <a class="nav-link active" href="/"><span>My Account</span></a>
-            </li>
-        </ul>
-        <div id="second-folder" class="folder"> </div>
-        <div id="first-folder" class="folder"> </div>
-    </nav>
-    <section id="content-view" class="row">
-        <div id="content-folder" class="tab-content welcomeContent">
+  <nav class="row">
+    <ul class="nav nav-tabs" role="tablist">
+      <li id="my-wardrobe-tab" class="nav-item wardrobeButton" role="presentation">
+        <a class="nav-link" href=""><span>My Wardrobe</span></a>
+      </li>
+      <li id="saved-outfits-tab" class="nav-item savedOutfitsButton" role="presentation">
+        <a class="nav-link" href=""><span>Saved Outfits</span></a>
+      </li>
+      <li id="add-new-tab" class="nav-item addNewButton" role="presentation">
+        <a class="nav-link" href="addNew"><span>Add New Item</span></a>
+      </li>
+      <li id="my-account-tab" class="nav-item" role="presentation">
+        <a class="nav-link" href="/"><span>My Account</span></a>
+      </li>
+    </ul>
+  </nav>
 
-            <!-- Tab content to render here - My Wardrobe, saved outfits, stats, add item -->
-            {{> login }}
-            {{!-- {{> outfits}}
-            {{> statistics}}
-            {{> addNew}} --}}
+  <section id="content-view" class="row">
+    <div id="content-folder" class="tab-content ">
+      <div class="row">
 
+        <div class="col-xl-4 welcomeContent">
+          <!-- Tab content to render here - My Wardrobe, saved outfits, stats, add item -->
+          {{> login }}
         </div>
-    </section>
+
+        <div class="col-xl-8 ">
+          <div class="instructions-container">
+            <h4 id="my-account-instructions">My Account</h4>
+            <p>
+              This is the first thing you must do to create your wardrobe. 
+              Either sign in to an existing user or create a new one. 
+              There currently is no facility to remove your account.
+            </p>
+            <p>
+              Each item you add will subsequently be added alongside your user
+              name and called forward in the carousels. Your outfits similarly.
+            </p>
+            <br/>
+            <h4 id="my-wardrobe-instructions">My Wardrobe</h4>
+            <p>From this page you create the outfit you want to wear.</p>
+            <p>Click on the items displayed in the carousels to add them
+              to the creator view at the top of the page. If you select the
+              wrong item or an item twice you can click on the incorrect item
+              in the creator and it will immediatly be removed from selection.
+            </p>
+            <p>If (like me) you have too many clothes you can filter the carousels
+              by category using the drop down filter menu. You will have to filter
+              `View All` to resume the full selection.
+            </p>
+            <p>If you want to start again with your creation, you can hit the clear
+              outfit button.
+            </p>
+            <p>Once you have finished type a name for your outfit into the Outfit
+              name field and hit the create outfit button.
+            </p>
+            <p>
+              If you do not provide a name or create an outfit with no items,
+              the message box at the top of the screen will alert you,
+              and instruct with how to proceed creating outfits.
+            </p>
+            <p>
+              Look out for these message bars as they will display useage tips
+              while you are creating.
+            </p>
+            <p>
+              When you have created an outfit the creator will clear, indicating
+              the action has been registered and you can create again.
+            </p>
+            <br />
+            <h4 id="saved-outfits-instructions">Saved Outfits</h4>
+            <p>
+              When you have created an outfit they are displayed in this tab.
+              Scroll left and right to view all of your creations.
+            </p>
+            <p>
+              If you wish to plan an outfit for a particular day, select the
+              outfit and the day followed by the add to calander button.
+            </p>
+            <p>
+              If you select a day that already has an outfit saved, the current
+              outfit will be replaced with the new one.
+            </p>
+            <p>
+              The calander bar displays the name of the outfit you have saved for that
+              day.
+            </p>
+            <p>
+              To remove the outfit, select the calander day with the outfit listed and
+              hit the remove from calander button.
+            </p>
+            <p>
+              To delete an outfit, select the outfit and click the delete button.
+              If the outfit is stored in the calander when you delete an outfit,
+              the messages bar will ask you to remove it from the planner first.
+            </p>
+            <p>
+              If you hit any of the buttons without making a selection, or not enough
+              selections as described above the messages bar will alert you to how to
+              proceed.
+            </p>
+            <br />
+            <h4 id="add-new-instructions">Add New Item</h4>
+            <p>
+              This page allows you to add to your wardrobe.
+            </p>
+            <p>
+              You must fill in the boxes, name of the item, colour, pattern, weight.
+              You must also upload an image to go with your selection or the create
+              feature will not work.
+            </p>
+            <p>
+              Advice: weight should be Heavy, Light, Medium, Sheer, Thick, but it is
+              not restricted. This property currently has no feature attached.
+            </p>
+            <p>
+              Select from the drop down menu, tops bottoms or overalls. Overalls are
+              dresses and dungeree.
+            </p>
+            <p>
+              These 3 options will sort the item in the carousel and further display a
+              category list for the type of garment.
+              Please pick only one, though there is no restriction.
+            </p>
+
+          </div>
+        </div>
 
 
-    <div id="calendar-container" class="row">
-        <div id="calendar-nav">
-            <ul class="nav nav-pills">
-                <li id="current-year" class="nav-title calendar-style">Year</li>
-                <li class="nav-item">
-                    <a id="btn-prev" class="nav-link nav-title calendar-style" href="#">Prev</a>
-                </li>
-                <li id="current-month" class="nav-title calendar-style">month</li>
-                <li class="nav-item">
-                    <a id="btn-next" class="nav-link nav-title calendar-style" href="#">Next</a>
-                </li>
-            </ul>
-        </div>
-        <div class="row">
-            <table id="calendar-table">
-                <tr id="calendar-row">
-                </tr>
-            </table>
-        </div>
+
+      </div>
+  </section>
+
+
+  <div id="calendar-container" class="row">
+    <div id="calendar-nav">
+      <ul class="nav nav-pills">
+        <li id="current-year" class="nav-title calendar-style">Year</li>
+        <li class="nav-item">
+          <a id="btn-prev" class="nav-link nav-title calendar-style" href="#">Prev</a>
+        </li>
+        <li id="current-month" class="nav-title calendar-style">month</li>
+        <li class="nav-item">
+          <a id="btn-next" class="nav-link nav-title calendar-style" href="#">Next</a>
+        </li>
+      </ul>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="/assets/js/login.js"></script>
+    <div class="row">
+      <table id="calendar-table">
+        <tr id="calendar-row">
+        </tr>
+      </table>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/assets/js/login.js"></script>
 </main>
