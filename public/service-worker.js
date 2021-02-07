@@ -3,6 +3,7 @@ const DATA_CACHE_NAME = 'data-cache-v1';
 const FILES_TO_CACHE = [
   'manifest.json',
 
+  '/assets/css/account.css',
   '/assets/css/calander.css',
   '/assets/css/create-outfit.css',
   '/assets/css/media-query.css',
